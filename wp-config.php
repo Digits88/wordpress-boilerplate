@@ -99,7 +99,7 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
-/* That's all, stop editing! Happy blogging. */
-
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/* That's all, stop editing! Happy blogging. */
