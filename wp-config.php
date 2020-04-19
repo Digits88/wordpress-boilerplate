@@ -102,4 +102,10 @@ define('WP_DEBUG', false);
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
+// ===========
+// Hide errors
+// ===========
+ini_set( 'display_errors', 0 );
+define( 'WP_DEBUG_DISPLAY', false );
+
 /* That's all, stop editing! Happy blogging. */
