@@ -35,12 +35,12 @@ define('DB_COLLATE', '');
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-    define('ABSPATH', dirname(__FILE__) . '/wordpress/');
+    define('ABSPATH', dirname(__FILE__).'/wordpress/');
 
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_CONTENT_DIR', realpath(ABSPATH . '../wp-content/'));
+define('WP_HOME', 'https://'.$_SERVER['HTTP_HOST']);
+define('WP_CONTENT_DIR', realpath(ABSPATH .'../wp-content/'));
 define('WP_CONTENT_URL', WP_HOME . '/wp-content');
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress');
+define('WP_SITEURL', 'https://'. $_SERVER['HTTP_HOST'].'/wordpress/');
 define('UPLOADS', '../uploads');
 
 /**
@@ -102,8 +102,9 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
+/** if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+*/
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
